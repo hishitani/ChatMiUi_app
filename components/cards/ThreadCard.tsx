@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { formatDateString } from "@/lib/utils";
-// import DeleteThread from "../forms/DeleteThread";
+import DeleteThread from "../forms/DeleteThread";
+
 
 interface Props {
 	id: string;
@@ -57,7 +58,7 @@ function ThreadCard({
 							/>
 						</Link>
 
-						<div className='thread-card_bar' />
+						<div className='thread-card__bar' />
 					</div>
 
 					<div className='flex w-full flex-col'>
@@ -114,13 +115,13 @@ function ThreadCard({
 					</div>
 				</div>
 
-				{/* <DeleteThread
-          threadId={JSON.stringify(id)}
-          currentUserId={currentUserId}
-          authorId={author.id}
-          parentId={parentId}
-          isComment={isComment}
-        /> */}
+				<DeleteThread
+					threadId={JSON.stringify(id)}
+					currentUserId={currentUserId}
+					authorId={author.id}
+					parentId={parentId}
+					isComment={isComment}
+				/>
 			</div>
 
 			{!isComment && comments.length > 0 && (
