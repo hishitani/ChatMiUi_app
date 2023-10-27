@@ -1,4 +1,4 @@
-import Link from "next/link";
+
 import Image from "next/image";
 
 interface Props {
@@ -8,7 +8,7 @@ interface Props {
 	username: string;
 	imgUrl: string;
 	bio: string;
-	type?: string;
+	type?: 'User' | 'Community';
 }
 
 function ProfileHeader({
