@@ -30,7 +30,7 @@ async function Page() {
 										alt='user_logo'
 										width={20}
 										height={20}
-										className='rounded-full object-cover'
+										className='rounded-full object-cover h-5'
 									/>
 									<p className='!text-small-regular text-light-1'>
 										<span className='mr-1 text-primary-500'>
