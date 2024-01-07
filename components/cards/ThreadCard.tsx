@@ -54,7 +54,7 @@ function ThreadCard({
 								src={author.image}
 								alt='user_community_image'
 								fill
-								className='cursor-pointer rounded-full'
+								className='cursor-pointer rounded-full object-cover'
 							/>
 						</Link>
 
@@ -133,7 +133,7 @@ function ThreadCard({
 							alt={`user_${index}`}
 							width={24}
 							height={24}
-							className={`${index !== 0 && "-ml-5"} rounded-full object-cover`}
+							className={`${index !== 0 && "-ml-5"} rounded-full object-cover h-6`}
 						/>
 					))}
 
